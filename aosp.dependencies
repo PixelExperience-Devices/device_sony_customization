@@ -250,10 +250,10 @@
     "revision":     "q-mr1"
   },
   {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/packages_apps_ExtendedSettings",
-    "target_path":  "packages/apps/ExtendedSettings",
-    "revision":     "q-mr1"
+    "remote":       "pixel",
+    "repository":   "hardware_qcom_display_sde",
+    "target_path":  "hardware/qcom/display/sde",
+    "revision":     "ten"
   },
   {
     "remote":       "github",
