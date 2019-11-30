@@ -102,8 +102,6 @@
     "target_path":  "device/sony/mermaid",
     "revision":     "master"
   },
-
-
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-yoshino",
@@ -256,36 +254,6 @@
     "repository":   "sonyxperiadev/packages_apps_ExtendedSettings",
     "target_path":  "packages/apps/ExtendedSettings",
     "revision":     "q-mr1"
-  },
-  {
-    "remote":       "pixel",
-    "repository":   "hardware_qcom_gps",
-    "target_path":  "hardware/qcom/",
-    "revision":     "ten"
-  },
-  {
-    "remote":       "pixel",
-    "repository":   "hardware_qcom_display_sde",
-    "target_path":  "hardware/qcom/display/sde",
-    "revision":     "ten"
-  },
-  {
-    "remote":       "pixel",
-    "repository":   "hardware_qcom_media_sdm845",
-    "target_path":  "hardware/qcom/media/sdm845",
-    "revision":     "ten"
-  },
-  {
-    "remote":       "pixel",
-    "repository":   "hardware_qcom_audio",
-    "target_path":  "hardware/qcom/audio",
-    "revision":     "ten"
-  },
-  {
-    "remote":       "pixel",
-    "repository":   "hardware_qcom_sdm845_data_ipacfg-mgr",
-    "target_path":  "hardware/qcom/sdm845/data/ipacfg-mgr",
-    "revision":     "ten"
   },
   {
     "remote":       "github",
