@@ -16,6 +16,8 @@
 
 TARGET_GAPPS_ARCH := arm64
 
+TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
+
 ifneq ($(filter aosp_f53% aosp_g1109, $(TARGET_PRODUCT)),)
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
