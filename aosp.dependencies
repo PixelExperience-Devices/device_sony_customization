@@ -62,7 +62,7 @@
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-nile",
-    "target_path":  "device/sony",
+    "target_path":  "device/sony/nile",
     "revision":     "master"
   },
   {
@@ -87,7 +87,7 @@
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-ganges",
-    "target_path":  "device/sony",
+    "target_path":  "device/sony/ganges",
     "revision":     "master"
   },
   {
@@ -105,7 +105,7 @@
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-yoshino",
-    "target_path":  "device/sony",
+    "target_path":  "device/sony/yoshino",
     "revision":     "master"
   },
   {
@@ -130,7 +130,7 @@
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-tama",
-    "target_path":  "device/sony",
+    "target_path":  "device/sony/tama",
     "revision":     "master"
   },
   {
@@ -155,7 +155,7 @@
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-kumano",
-    "target_path":  "device/sony",
+    "target_path":  "device/sony/kumano",
     "revision":     "master"
   },
   {
