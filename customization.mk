@@ -61,6 +61,11 @@ else
 TARGET_BOOT_ANIMATION_RES := $(TARGET_SCREEN_WIDTH)
 endif
 
+# Product for OTA
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=$(CUSTOM_BUILD) \
+    TARGET_DEVICE=$(CUSTOM_BUILD)
+
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
