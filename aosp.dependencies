@@ -55,9 +55,9 @@
   },
   {
     "remote":       "github",
-    "repository":   "kholk/device-sony-common",
+    "repository":   "sonyxperiadev/device-sony-common",
     "target_path":  "device/sony/common",
-    "branch":     "cleanup"
+    "branch":     "master"
   },
   {
     "remote":       "github",
