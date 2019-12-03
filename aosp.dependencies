@@ -278,7 +278,7 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/vendor-qcom-opensource-location",
     "target_path":  "vendor/qcom/opensource/location",
-    "branch":     "p-mr0"
+    "branch":     "q-mr0"
   },
   {
     "repository":   "device_sony_ipacfg-mgr",
