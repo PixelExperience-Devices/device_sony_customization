@@ -20,7 +20,7 @@
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/kernel-defconfig",
-    "target_path":  "kernel/sony/msm-4.14/arch/arm64/configs/sony",
+    "target_path":  "kernel/sony/msm-4.14/kernel/arch/arm64/configs/sony",
     "branch":     "aosp/LA.UM.7.1.r1"
   },
   {
