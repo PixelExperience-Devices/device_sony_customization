@@ -296,4 +296,10 @@
     "target_path":  "vendor/qcom/opensource/display-commonsys-intf",
     "branch":     "aosp/LA.UM.7.1.r1"
   }
+  {
+    "repository": "packages_apps_PixelLiveWallpaper",
+    "target_path": "packages/apps/PixelLiveWallpaper",
+    "branch": "ten",
+    "remote": "pixel-gitlab"
+  }
 ]
