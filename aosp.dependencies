@@ -7,9 +7,9 @@
   },
   {
     "remote":       "github",
-    "repository":   "sonyxperiadev/kernel",
+    "repository":   "kholk/kernel",
     "target_path":  "kernel/sony/msm-4.14/kernel",
-    "branch":     "aosp/LA.UM.7.1.r1"
+    "branch":     "71r1-pe-playground"
   },
   {
     "remote":       "github",
@@ -49,9 +49,9 @@
   },
   {
     "remote":       "github",
-    "repository":   "sonyxperiadev/device-sony-common",
+    "repository":   "kholk/device-sony-common",
     "target_path":  "device/sony/common",
-    "branch":     "master"
+    "branch":     "patch-20"
   },
   {
     "remote":       "github",
