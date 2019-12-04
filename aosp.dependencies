@@ -32,7 +32,7 @@
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/vendor-qcom-opensource-wlan-qca-wifi-host-cmn",
-    "target_path":  "kernel/sony/msm-4.14/kernel/drivers/staging/qca-wifi-host-cmn/",
+    "target_path":  "kernel/sony/msm-4.14/kernel/drivers/staging/wlan-qc/qca-wifi-host-cmn",
     "branch":     "aosp/LA.UM.7.1.r1"
   },
   {
