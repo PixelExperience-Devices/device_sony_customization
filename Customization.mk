@@ -15,3 +15,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Kernel inline building
+BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/sony/msm-4.14/kernel
+TARGET_NEEDS_DTBOIMAGE := false
+

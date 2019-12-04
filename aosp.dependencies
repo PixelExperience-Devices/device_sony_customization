@@ -7,12 +7,6 @@
   },
   {
     "remote":       "github",
-    "repository":   "sonyxperiadev/kernel-sony-msm-4.14-common",
-    "target_path":  "kernel/sony/msm-4.14/common-kernel",
-    "branch":     "aosp/LA.UM.7.1.r1"
-  },
-  {
-    "remote":       "github",
     "repository":   "sonyxperiadev/kernel",
     "target_path":  "kernel/sony/msm-4.14/kernel",
     "branch":     "aosp/LA.UM.7.1.r1"
