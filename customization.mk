@@ -28,7 +28,7 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 endif
 
-ifneq ($(filter aosp_h82%6, $(TARGET_PRODUCT)),)
+ifneq ($(filter aosp_h82%6 aosp_83%4, $(TARGET_PRODUCT)),)
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 endif
