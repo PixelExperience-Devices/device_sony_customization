@@ -246,6 +246,12 @@
   },
   {
     "remote":       "github",
+    "repository":   "sonyxperiadev/hardware-qcom-media",
+    "target_path":  "hardware/qcom/media/sm8150",
+    "branch":     "aosp/LA.UM.7.1.r1"
+  },
+  {
+    "remote":       "github",
     "repository":   "sonyxperiadev/camera",
     "target_path":  "vendor/qcom/opensource/camera",
     "branch":     "aosp/LA.UM.6.4.r1"
