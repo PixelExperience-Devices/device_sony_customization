@@ -72,7 +72,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-        media.stagefright.thumbnail.prefer_hw_codecs=true
+        media.stagefright.thumbnail.prefer_hw_codecs=true 
+
+# Update recovery with the ota
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.sys.recovery_update=true
 
 TARGET_USES_AOSP_APNS_CONF := true
 
