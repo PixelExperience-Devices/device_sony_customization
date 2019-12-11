@@ -72,11 +72,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-        media.stagefright.thumbnail.prefer_hw_codecs=true 
+        media.stagefright.thumbnail.prefer_hw_codecs=true
 
-# Update recovery with the ota
+# Update recovery with the ota for legacy
+ifneq ($(filter loire tone yoshino, $(SOMC_PLATFORM)),)
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.sys.recovery_update=true
+    persist.sys.recovery_update=true
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.recovery_update=false
+endif
 
 TARGET_USES_AOSP_APNS_CONF := true
 
