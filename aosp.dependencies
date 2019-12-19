@@ -21,7 +21,7 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/kernel-techpack-data-kernel",
     "target_path":  "kernel/sony/msm-4.14/kernel/techpack/data-kernel",
-    "branch":     "LA.UM.8.1.r1"
+    "branch":     "LA.UM.7.1.r1"
   },
   {
     "remote":       "github",
