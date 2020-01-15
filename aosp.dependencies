@@ -287,12 +287,6 @@
     "branch":     "q-mr0"
   },
   {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/vendor-qcom-opensource-telephony",
-    "target_path":  "vendor/qcom/opensource/telephony",
-    "branch":     "aosp/LA.UM.7.1.r1"
-  },
-  {
     "repository":   "device_sony_ipacfg-mgr",
     "target_path":  "hardware/qcom/data/ipacfg-mgr/sdm845"
   },
