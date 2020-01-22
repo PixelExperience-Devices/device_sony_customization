@@ -64,6 +64,10 @@ endif
 # Product for OTA
 CUSTOM_TARGET_DEVICE := $(CUSTOM_BUILD)
 
+PRODUCT_PACKAGES += \
+    tune2fs \
+    strace
+
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
