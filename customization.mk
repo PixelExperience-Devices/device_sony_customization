@@ -65,8 +65,10 @@ endif
 CUSTOM_TARGET_DEVICE := $(CUSTOM_BUILD)
 
 PRODUCT_PACKAGES += \
-    tune2fs \
+    e2fsprogs \
     strace
+    
+TARGET_RECOVERY_DEVICE_MODULES := tune2fs strace
 
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
