@@ -22,6 +22,10 @@ TARGET_CLANG_VERSION := r353983c
 # A/B Incremental update 
 TARGET_INCREMENTAL_BLOCK_BASED := true
 
+# Updatable Apex
+BOARD_KERNEL_CMDLINE += loop.max_part=16
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Aosp SF
 TARGET_USES_AOSP_SURFACEFLINGER := true
 
