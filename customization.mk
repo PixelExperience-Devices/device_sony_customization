@@ -102,4 +102,7 @@ TARGET_USES_AOSP_APNS_CONF := true
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
+# Widevine
+$(call inherit-product-if-exists, vendor/widevine/widevine.mk)
+
 -include vendor/aosp/config/common_full_phone.mk
