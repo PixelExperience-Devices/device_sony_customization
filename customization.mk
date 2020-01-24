@@ -70,6 +70,9 @@ PRODUCT_PACKAGES += \
     
 TARGET_RECOVERY_DEVICE_MODULES := tune2fs strace
 
+# Google Wifi Hal
+TARGET_INCLUDE_WIFI_EXT := true
+
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
