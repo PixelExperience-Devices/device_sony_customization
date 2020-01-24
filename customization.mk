@@ -73,6 +73,10 @@ TARGET_RECOVERY_DEVICE_MODULES := tune2fs strace
 # Google Wifi Hal
 TARGET_INCLUDE_WIFI_EXT := true
 
+# Ims
+PRODUCT_PACKAGES += \
+    ims
+
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
