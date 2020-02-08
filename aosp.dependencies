@@ -258,6 +258,12 @@
   },
   {
     "remote":       "github",
+    "repository":   "sonyxperiadev/hardware-qcom-media",
+    "target_path":  "hardware/qcom/media/sdm660-libion",
+    "branch":     "aosp/LA.UM.8.2.1.r1"
+  },
+  {
+    "remote":       "github",
     "repository":   "sonyxperiadev/camera",
     "target_path":  "vendor/qcom/opensource/camera",
     "branch":     "aosp/LA.UM.6.4.r1"
