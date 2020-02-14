@@ -84,9 +84,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.secure=0 \
     ro.debuggable=1
 
-PRODUCT_PROPERTY_OVERRIDES += \
-        media.stagefright.thumbnail.prefer_hw_codecs=true
-
 # Update recovery with the ota for legacy
 ifneq ($(filter loire tone yoshino, $(SOMC_PLATFORM)),)
 PRODUCT_PROPERTY_OVERRIDES += \
