@@ -75,7 +75,9 @@ TARGET_INCLUDE_WIFI_EXT := false
 
 # Ims
 PRODUCT_PACKAGES += \
-    ims
+    ims \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON
 
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
