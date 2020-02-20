@@ -78,6 +78,9 @@ TARGET_INCLUDE_WIFI_EXT := false
 # cust packages
 PRODUCT_PACKAGES += \
     ims \
+    ims_symlinks \
+    libimscamera_jni \
+    libimsmedia_jni \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON
 
