@@ -18,6 +18,8 @@ TARGET_GAPPS_ARCH := arm64
 
 TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
 
+CUST_PATH := device/sony/customization
+
 ifneq ($(filter aosp_f53% aosp_g1109, $(TARGET_PRODUCT)),)
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
@@ -73,11 +75,16 @@ TARGET_RECOVERY_DEVICE_MODULES := tune2fs strace
 # Google Wifi Hal
 TARGET_INCLUDE_WIFI_EXT := false
 
-# Ims
+# cust packages
 PRODUCT_PACKAGES += \
     ims \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON
+
+# Permissions for Hotword
+PRODUCT_COPY_FILES += \
+    $(CUST_PATH)/HotwordEnrollmentXGoogleHEXAGON/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
+    $(CUST_PATH)/HotwordEnrollmentOKGoogleHEXAGON/privapp-permissions-OkGoogleHEXAGON.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml
 
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
