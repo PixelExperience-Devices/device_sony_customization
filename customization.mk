@@ -157,4 +157,9 @@ PRODUCT_PACKAGES += \
 # Widevine
 $(call inherit-product-if-exists, vendor/widevine/widevine.mk)
 
+# Updatable Apex
+BOARD_KERNEL_CMDLINE += loop.max_part=16
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 -include vendor/aosp/config/common_full_phone.mk
