@@ -17,6 +17,7 @@ LOCAL_MODULE := libimsmedia_jni
 LOCAL_SRC_FILES := ims/$(LOCAL_MODULE).so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MULTILIB := 64
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
@@ -26,6 +27,7 @@ LOCAL_MODULE := libimscamera_jni
 LOCAL_SRC_FILES := ims/$(LOCAL_MODULE).so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MULTILIB := 64
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
@@ -35,6 +37,7 @@ LOCAL_MODULE := ims
 LOCAL_SRC_FILES := ims/ims.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_SHARED_LIBRARY := libimscamera_jni libimsmedia_jni
@@ -46,6 +49,7 @@ LOCAL_MODULE := embms
 LOCAL_SRC_FILES := ims/embms.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -55,6 +59,7 @@ LOCAL_MODULE := qcrilmsgtunnel
 LOCAL_SRC_FILES := ims/qcrilmsgtunnel.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
@@ -65,6 +70,7 @@ LOCAL_MODULE := QtiTelephonyService
 LOCAL_SRC_FILES := ims/QtiTelephonyService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -74,6 +80,7 @@ LOCAL_MODULE := uceShimService
 LOCAL_SRC_FILES := ims/uceShimService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -83,6 +90,7 @@ LOCAL_MODULE := uimgbaservice
 LOCAL_SRC_FILES := ims/uimgbaservice.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -92,6 +100,7 @@ LOCAL_MODULE := uimlpaservice
 LOCAL_SRC_FILES := ims/uimlpaservice.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -102,7 +111,7 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)
 
 # IMS Symlinks
 SONY_SYMLINKS := \
-    /system/lib64/libimscamera_jni.so:system/priv-app/ims/lib/arm64/libimscamera_jni.so \
-    /system/lib64/libimsmedia_jni.so:system/priv-app/ims/lib/arm64/libimsmedia_jni.so
+    /system/lib64/libimscamera_jni.so:system/product/priv-app/ims/lib/arm64/libimscamera_jni.so \
+    /system/lib64/libimsmedia_jni.so:system/product/priv-app/ims/lib/arm64/libimsmedia_jni.so
 
 include $(SONY_BUILD_SYMLINKS)
