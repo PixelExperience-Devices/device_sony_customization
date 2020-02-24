@@ -69,7 +69,7 @@ CUSTOM_TARGET_DEVICE := $(CUSTOM_BUILD)
 PRODUCT_PACKAGES += \
     e2fsprogs \
     strace
-    
+
 TARGET_RECOVERY_DEVICE_MODULES := tune2fs strace
 
 # Google Wifi Hal
@@ -126,7 +126,7 @@ PRODUCT_COPY_FILES += \
     $(CUST_PATH)/ims/uimgbalibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbalibrary.jar \
     $(CUST_PATH)/ims/uimgbamanagerlibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbamanagerlibrary.jar \
     $(CUST_PATH)/ims/uimlpalibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimlpalibrary.jar
-    
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1  \
@@ -158,7 +158,6 @@ PRODUCT_PACKAGES += \
 $(call inherit-product-if-exists, vendor/widevine/widevine.mk)
 
 # Updatable Apex
-BOARD_KERNEL_CMDLINE += loop.max_part=16
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
