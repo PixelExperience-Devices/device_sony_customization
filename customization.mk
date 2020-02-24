@@ -159,6 +159,5 @@ $(call inherit-product-if-exists, vendor/widevine/widevine.mk)
 
 # Updatable Apex
 DEXPREOPT_GENERATE_APEX_IMAGE := true
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 -include vendor/aosp/config/common_full_phone.mk
