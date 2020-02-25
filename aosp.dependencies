@@ -282,6 +282,12 @@
   },
   {
     "remote":       "github",
+    "repository":   "sonyxperiadev/vendor-qcom-opensource-core-utils",
+    "target_path":  "vendor/qcom/opensource/core-utils",
+    "branch":     "aosp/LA.UM.8.1.r1"
+  },
+  {
+    "remote":       "github",
     "repository":   "sonyxperiadev/vendor-qcom-opensource-dataservices",
     "target_path":  "vendor/qcom/opensource/dataservices-sony",
     "branch":     "q-mr1"
