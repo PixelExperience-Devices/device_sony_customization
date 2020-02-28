@@ -1,0 +1,2 @@
+on late-fs
+    mount none /odm/lib64 /system/priv-app/ims/lib/arm64 bind rec

@@ -82,6 +82,7 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     QtiSystemService \
     libdiagsystem \
+    bindmountims.rc \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
