@@ -44,6 +44,16 @@ LOCAL_SHARED_LIBRARY := libimscamera_jni libimsmedia_jni
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libdiagsystem
+LOCAL_SRC_FILES := ims/libdiag_system.so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
+LOCAL_MULTILIB := 64
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := embms
 LOCAL_SRC_FILES := ims/embms.apk
 LOCAL_CERTIFICATE := platform
