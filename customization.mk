@@ -80,6 +80,7 @@ PRODUCT_PACKAGES += \
     ims \
     ims_symlinks \
     QtiTelephonyService \
+    QtiSystemService \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
