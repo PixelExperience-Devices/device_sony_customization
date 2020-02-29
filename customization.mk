@@ -103,6 +103,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+TARGET_FWK_DETECT_PATH := vendor/qcom/opensource/core-utils
+
 # Permissions for Hotword
 PRODUCT_COPY_FILES += \
     $(CUST_PATH)/HotwordEnrollmentXGoogleHEXAGON/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
