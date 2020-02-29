@@ -151,6 +151,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.recovery_update=false
 endif
 
+# VoLTE
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.radio.is_voip_enabled=1 \
+    persist.vendor.radio.rat_on=combine \
+    persist.vendor.radio.voice_on_lte=1
+
 TARGET_USES_AOSP_APNS_CONF := true
 
 # Wallpapers
