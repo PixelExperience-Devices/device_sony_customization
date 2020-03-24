@@ -300,7 +300,8 @@
   },
   {
     "repository":   "device_sony_ipacfg-mgr",
-    "target_path":  "hardware/qcom/data/ipacfg-mgr/sdm845"
+    "target_path":  "hardware/qcom/data/ipacfg-mgr/sdm845",
+    "branch":     "ten"
   },
   {
     "remote":       "github",
