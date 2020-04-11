@@ -144,6 +144,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.secure=0 \
     ro.debuggable=1
 
+# Use Vulkan for UI rendering
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.renderer=skiavk
+
 # Update recovery with the ota for legacy
 ifneq ($(filter loire tone yoshino, $(SOMC_PLATFORM)),)
 PRODUCT_PROPERTY_OVERRIDES += \
