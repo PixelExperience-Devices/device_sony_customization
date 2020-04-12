@@ -20,6 +20,8 @@ TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
 
 CUST_PATH := device/sony/customization
 
+DEVICE_PACKAGE_OVERLAYS += $(CUST_PATH)/overlay
+
 ifneq ($(filter aosp_f53% aosp_g1109 aosp_g8441, $(TARGET_PRODUCT)),)
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
