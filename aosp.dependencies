@@ -266,7 +266,7 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/camera",
     "target_path":  "vendor/qcom/opensource/camera",
-    "branch":     "aosp/LA.UM.6.4.r1"
+    "branch":     "aosp/LA.UM.8.11.r1"
   },
   {
     "remote":       "github",
