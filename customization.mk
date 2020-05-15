@@ -84,14 +84,6 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     QtiSystemService \
     libdiagsystem \
-    bindmountims.rc \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    ims-ext-common \
-    ims_ext_common.xml \
-    telephony-ext \
     libimscamera_jni \
     libimsmedia_jni \
     embms \
@@ -102,8 +94,22 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON
 
+# Telephony packages (OSS)
+PRODUCT_PACKAGES += \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    telephony-ext \
+    ims-ext-common \
+    ims_ext_common.xml
+
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# Sony Open Devices specific quirks and adjustments
+PRODUCT_PACKAGES += \
+    bindmountims.rc
 
 TARGET_FWK_DETECT_PATH := vendor/qcom/opensource/core-utils
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
