@@ -102,7 +102,9 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext \
     ims-ext-common \
-    ims_ext_common.xml
+    ims_ext_common.xml \
+    qtiImsInCallUi \
+    ConfURIDialer
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
