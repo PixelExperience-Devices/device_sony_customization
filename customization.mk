@@ -98,15 +98,8 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON
 
-# Telephony packages (OSS)
+# IMS Extras
 PRODUCT_PACKAGES += \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext \
-    ims-ext-common \
-    ims_ext_common.xml \
     qtiImsInCallUi \
     ConfURIDialer
 
@@ -146,11 +139,6 @@ PRODUCT_COPY_FILES += \
     $(CUST_PATH)/ims/uimgbalibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbalibrary.jar \
     $(CUST_PATH)/ims/uimgbamanagerlibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbamanagerlibrary.jar \
     $(CUST_PATH)/ims/uimlpalibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimlpalibrary.jar
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1  \
-    persist.dbg.wfc_avail_ovr=1
 
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
