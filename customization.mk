@@ -53,14 +53,18 @@ TARGET_SCREEN_WIDTH := 2160
 endif
 
 ifneq ($(filter aosp_j%110, $(TARGET_PRODUCT)),)
-TARGET_SCREEN_HEIGHT := 3240
-TARGET_SCREEN_WIDTH := 3288
+TARGET_SCREEN_HEIGHT := 3840
+TARGET_SCREEN_WIDTH := 1644
 endif
 
-ifneq ($(filter aosp_j%110 aosp_g814%, $(TARGET_PRODUCT)),)
+ifneq ($(filter aosp_g814%, $(TARGET_PRODUCT)),)
 # Faking to 1080 to get the right bootanimation res on:
-# Griffin (3240x3288), Maple(3840x2160)
+# Maple(3840x2160)
 TARGET_BOOT_ANIMATION_RES := 1080
+else ifneq ($(filter aosp_j%110, $(TARGET_PRODUCT)),)
+# Faking to 1440 to get the best bootanimation res on:
+# Griffin (3840x1644)
+TARGET_BOOT_ANIMATION_RES := 1440
 else
 TARGET_BOOT_ANIMATION_RES := $(TARGET_SCREEN_WIDTH)
 endif
