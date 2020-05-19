@@ -83,18 +83,6 @@ TARGET_INCLUDE_WIFI_EXT := false
 
 # cust packages
 PRODUCT_PACKAGES += \
-    ims \
-    ims_symlinks \
-    QtiTelephonyService \
-    QtiSystemService \
-    libdiagsystem \
-    libimscamera_jni \
-    libimsmedia_jni \
-    embms \
-    qcrilmsgtunnel \
-    uceShimService \
-    uimgbaservice \
-    uimlpaservice \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON
 
@@ -106,39 +94,43 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# Sony Open Devices specific quirks and adjustments
-PRODUCT_PACKAGES += \
-    bindmountims.rc
-
 TARGET_FWK_DETECT_PATH := vendor/qcom/opensource/core-utils
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
+# ODM apps are signed with test-keys: stop bind mounting
+# these apps, because we are including them in the build
+# here to get them signed with our keys for security purposes.
+TARGET_USES_ODM_APPS_BINDMOUNT := false
+
+ifeq ($(TARGET_USES_ODM_APPS_BINDMOUNT),false)
+# Standard ODM apps
+PRODUCT_PACKAGES += \
+    datastatusnotification \
+    embms \
+    QtiTelephonyService \
+    uceShimService \
+    uimgbaservice \
+    uimlpaservice \
+    uimremoteclient \
+    uimremoteserver
+
+# Standard ODM priv-apps
+PRODUCT_PACKAGES += \
+    dpmserviceapp \
+    ims \
+    qcrilmsgtunnel
+endif # !TARGET_USES_ODM_APPS_BINDMOUNT
+
+# Extra apps that are not standard in ODM
+PRODUCT_PACKAGES += \
+    CneApp \
+    IWlanService \
+    QtiSystemService
 
 # Permissions for Hotword
 PRODUCT_COPY_FILES += \
     $(CUST_PATH)/HotwordEnrollmentXGoogleHEXAGON/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
     $(CUST_PATH)/HotwordEnrollmentOKGoogleHEXAGON/privapp-permissions-OkGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml
-
-# IMS
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/vendor/etc/permissions/privapp-permissions-ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-ims.xml \
-    $(CUST_PATH)/ims/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
-    $(CUST_PATH)/ims/embms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms.xml \
-    $(CUST_PATH)/ims/lpa.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/lpa.xml \
-    $(CUST_PATH)/ims/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
-    $(CUST_PATH)/ims/qcrilmsgtunnel.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-qcrilmsgtunnel.xml \
-    $(CUST_PATH)/ims/telephonyservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephonyservice.xml \
-    $(CUST_PATH)/ims/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
-    $(CUST_PATH)/ims/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
-    $(CUST_PATH)/ims/uimremoteclient.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/uimremoteclient.xml \
-    $(CUST_PATH)/ims/uimremoteserver.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/uimremoteserver.xml \
-    $(CUST_PATH)/ims/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
-    $(CUST_PATH)/ims/com.qualcomm.qti.imscmservice-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
-    $(CUST_PATH)/ims/qcrilhook.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
-    $(CUST_PATH)/ims/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
-    $(CUST_PATH)/ims/uimgbalibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbalibrary.jar \
-    $(CUST_PATH)/ims/uimgbamanagerlibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbamanagerlibrary.jar \
-    $(CUST_PATH)/ims/uimlpalibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimlpalibrary.jar
 
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
