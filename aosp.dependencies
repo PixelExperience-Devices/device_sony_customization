@@ -323,6 +323,12 @@
   },
   {
     "remote":       "github",
+    "repository":   "sonyxperiadev/vendor-qcom-opensource-audio-hal-st-hal",
+    "target_path":  "vendor/qcom/opensource/st-hal",
+    "branch":     "aosp/LA.UM.8.1.r1"
+  },
+  {
+    "remote":       "github",
     "repository":   "afstamming/proprietary_vendor_widevine",
     "target_path":  "vendor/widevine",
     "branch":     "af-lineage-17.0"
