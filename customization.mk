@@ -86,6 +86,11 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON
 
+# TEMP: Missing libs for soundtrigger
+PRODUCT_PACKAGES += \
+    libsmwrapper \
+    libmulawdec
+
 # IMS Extras
 PRODUCT_PACKAGES += \
     qtiImsInCallUi \
