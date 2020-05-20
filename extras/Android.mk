@@ -1,4 +1,5 @@
 # Copyright (C) 2020 Paul Bouchara
+#                    AngeloGioacchino Del Regno <kholk11@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,8 +14,8 @@
 # limitations under the License.
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollmentXGoogleHEXAGON
-LOCAL_SRC_FILES := HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+LOCAL_MODULE := HotwordEnrollmentOKGoogleHEXAGON
+LOCAL_SRC_FILES := extras/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_PRODUCT_MODULE := true
@@ -22,3 +23,15 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := HotwordEnrollmentXGoogleHEXAGON
+LOCAL_SRC_FILES := extras/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_PRODUCT_MODULE := true
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
