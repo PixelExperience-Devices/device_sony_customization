@@ -15,6 +15,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+CUST_PATH := device/sony/customization
+
 # Compilers setup for Q
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_CLANG_VERSION := r353983c
@@ -30,3 +32,8 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_SOURCE := kernel/sony/msm-4.14/kernel
 TARGET_NEEDS_DTBOIMAGE := false
+
+# Temporary: CnE
+DEVICE_MANIFEST_FILE += $(CUST_PATH)/ims/cne/vendor.hw.cneservices.xml
+
+BOARD_VENDOR_SEPOLICY_DIRS += $(CUST_PATH)/ims/cne/sepolicy
