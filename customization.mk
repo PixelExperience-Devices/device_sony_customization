@@ -132,6 +132,18 @@ PRODUCT_PACKAGES += \
     IWlanService \
     QtiSystemService
 
+# Extra non-ODM dependencies
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.data.latency@1.0 \
+    com.quicinc.cne.api@1.0 \
+    com.quicinc.cne.api@1.1 \
+    com.quicinc.cne.constants@1.0 \
+    com.quicinc.cne.constants@2.1 \
+    libcne \
+    libcneoplookup \
+    libcneqmiutils \
+    cnd
+
 # Permissions for Hotword
 PRODUCT_COPY_FILES += \
     $(CUST_PATH)/extras/HotwordEnrollmentXGoogleHEXAGON/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
