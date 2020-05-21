@@ -1,1 +1,1 @@
-/vendor/bin/cnd       u:object_r:cnd_exec:s0
+/(system/vendor|vendor)/bin/cnd            u:object_r:cnd_exec:s0
