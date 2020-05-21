@@ -130,7 +130,7 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 
-# Our enhancements
+# Our enhancements - Apps
 include $(CLEAR_VARS)
 LOCAL_MODULE := CneApp
 LOCAL_SRC_FILES := ims/CneApp.apk
@@ -161,100 +161,3 @@ LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := cnd.rc
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES := ims/cne/bin/cnd
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/bin
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := cnd.rc
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES := ims/cne/etc/init/cnd.rc
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/init
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.hardware.data.latency@1.0
-LOCAL_SRC_FILES := ims/cne/lib64/vendor.qti.hardware.data.latency@1.0.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.quicinc.cne.api@1.0
-LOCAL_SRC_FILES := ims/cne/lib64/com.quicinc.cne.api@1.0.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.quicinc.cne.api@1.1
-LOCAL_SRC_FILES := ims/cne/lib64/com.quicinc.cne.api@1.1.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.quicinc.cne.constants@1.0
-LOCAL_SRC_FILES := ims/cne/lib64/com.quicinc.cne.constants@1.0.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.quicinc.cne.constants@2.1
-LOCAL_SRC_FILES := ims/cne/lib64/com.quicinc.cne.constants@2.1.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libcne
-LOCAL_SRC_FILES := ims/cne/lib64/libcne.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libcneoplookup
-LOCAL_SRC_FILES := ims/cne/lib64/libcneoplookup.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libcneqmiutils
-LOCAL_SRC_FILES := ims/cne/lib64/libcneqmiutils.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
