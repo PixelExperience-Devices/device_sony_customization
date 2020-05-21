@@ -21,7 +21,7 @@ CUST_PATH := device/sony/customization
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_CLANG_VERSION := r353983c
 
-# A/B Incremental update 
+# A/B Incremental update
 TARGET_INCREMENTAL_BLOCK_BASED := true
 
 # Aosp SF
