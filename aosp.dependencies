@@ -259,19 +259,19 @@
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/hardware-qcom-display",
-    "target_path":  "hardware/qcom/display/sde",
+    "target_path":  "vendor/qcom/opensource/display",
     "branch":     "aosp/LA.UM.8.1.r1"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/hardware-qcom-media",
-    "target_path":  "hardware/qcom/media/sm8150",
+    "target_path":  "vendor/qcom/opensource/media/sm8150",
     "branch":     "aosp/LA.UM.8.1.r1"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/hardware-qcom-media",
-    "target_path":  "hardware/qcom/media/sdm660-libion",
+    "target_path":  "vendor/qcom/opensource/media/sdm660-libion",
     "branch":     "aosp/LA.UM.8.2.1.r1"
   },
   {
@@ -312,7 +312,7 @@
   },
   {
     "repository":   "device_sony_ipacfg-mgr",
-    "target_path":  "hardware/qcom/data/ipacfg-mgr/sdm845",
+    "target_path":  "vendor/qcom/opensource/data/ipacfg-mgr/sdm845",
     "branch":     "ten"
   },
   {
