@@ -329,12 +329,6 @@
   },
   {
     "remote":       "github",
-    "repository":   "sonyxperiadev/vendor-qcom-opensource-vibrator",
-    "target_path":  "vendor/qcom/opensource/vibrator",
-    "branch":     "aosp/LA.UM.7.1.r1"
-  },
-  {
-    "remote":       "github",
     "repository":   "sonyxperiadev/vendor-qcom-opensource-audio-hal-st-hal",
     "target_path":  "vendor/qcom/opensource/st-hal",
     "branch":     "aosp/LA.UM.8.1.r1"
