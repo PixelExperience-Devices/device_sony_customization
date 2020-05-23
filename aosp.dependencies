@@ -172,6 +172,18 @@
   },
   {
     "remote":       "github",
+    "repository":   "sonyxperiadev/device-sony-seine",
+    "target_path":  "device/sony/seine",
+    "branch":     "master"
+  },
+  {
+    "remote":       "github",
+    "repository":   "sonyxperiadev/device-sony-pdx201",
+    "target_path":  "device/sony/pdx201",
+    "branch":     "master"
+  },
+  {
+    "remote":       "github",
     "repository":   "sonyxperiadev/vendor-nxp",
     "target_path":  "vendor/nxp",
     "branch":     "master"
