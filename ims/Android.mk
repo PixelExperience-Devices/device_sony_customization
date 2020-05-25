@@ -257,3 +257,10 @@ LOCAL_MULTILIB := 64
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := bindmountims.rc
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES := ims/bindmountims.rc
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/init
+include $(BUILD_PREBUILT)
