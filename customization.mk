@@ -130,6 +130,10 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel
 endif # !TARGET_USES_ODM_APPS_BINDMOUNT
 
+# Bind-mount odm files into subfolder of /system_ext
+PRODUCT_PACKAGES += \
+    bindmountims.rc
+
 # Extra apps that are not standard in ODM
 PRODUCT_PACKAGES += \
     CneApp \
