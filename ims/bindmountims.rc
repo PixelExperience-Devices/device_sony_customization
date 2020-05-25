@@ -29,5 +29,5 @@ on late-fs
     mount none /odm/system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar /product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
     mount none /odm/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar /product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
 
-    mount none /odm/system_ext/product/etc/permissions/ims_permissions.xml /product/product/etc/permissions/ims_permissions.xml
-    mount none /odm/system_ext/product/etc/permissions/privapp-permissions-ims.xml /product/product/etc/permissions/privapp-permissions-ims.xml
+    mount none /odm/system_ext/product/etc/permissions/ims_permissions.xml /product/etc/permissions/ims_permissions.xml
+    mount none /odm/system_ext/product/etc/permissions/privapp-permissions-ims.xml /product/etc/permissions/privapp-permissions-ims.xml
