@@ -153,6 +153,37 @@ PRODUCT_COPY_FILES += \
     $(CUST_PATH)/extras/HotwordEnrollmentXGoogleHEXAGON/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
     $(CUST_PATH)/extras/HotwordEnrollmentOKGoogleHEXAGON/privapp-permissions-OkGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml
 
+# Empty framework jars to bindmount from ODM
+PRODUCT_COPY_FILES += \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qti.dpmframework.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/embmslibrary.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/ims-ext-common.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/qti-telephony-hidl-wrapper.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/qti-telephony-utils.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbalibrary.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbamanagerlibrary.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimlpalibrary.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimremoteclientlibrary.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimremoteserverlibrary.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimservicelibrary.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.data.factory-V1.0-java.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.data.factory-V2.0-java.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.connection-V1.0-java.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.connection-V1.1-java.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
+
+# Empty permission xmls to bindmount from ODM
+PRODUCT_COPY_FILES += \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/ims_permissions.xml \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/privapp-permissions-ims.xml
+
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
