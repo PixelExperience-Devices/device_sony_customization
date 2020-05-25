@@ -181,8 +181,8 @@ PRODUCT_COPY_FILES += \
 
 # Empty permission xmls to bindmount from ODM
 PRODUCT_COPY_FILES += \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/ims_permissions.xml \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/privapp-permissions-ims.xml
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/ims_permissions.xml \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-ims.xml
 
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
