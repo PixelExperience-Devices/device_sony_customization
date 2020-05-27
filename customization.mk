@@ -95,6 +95,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdataitems
 
+# Carrier configuration
+PRODUCT_PACKAGES += \
+    CarrierConfig
+
 # IMS Extras
 PRODUCT_PACKAGES += \
     qtiImsInCallUi \
