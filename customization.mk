@@ -170,10 +170,7 @@ PRODUCT_COPY_FILES += \
     $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
     $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
     $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/embmslibrary.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/ims-ext-common.jar \
     $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/qti-telephony-hidl-wrapper.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/qti-telephony-utils.jar \
     $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbalibrary.jar \
     $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbamanagerlibrary.jar \
     $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimlpalibrary.jar \
