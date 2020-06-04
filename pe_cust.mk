@@ -15,3 +15,4 @@
 # limitations under the License.
 
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
