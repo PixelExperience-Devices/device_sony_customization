@@ -258,6 +258,12 @@
   },
   {
     "remote":       "github",
+    "repository":   "sonyxperiadev/SonyOpenTelephony",
+    "target_path":  "packages/apps/SonyOpenTelephony",
+    "branch":       "master"
+  },
+  {
+    "remote":       "github",
     "repository":   "sonyxperiadev/hardware-qcom-display",
     "target_path":  "vendor/qcom/opensource/display",
     "branch":     "aosp/LA.UM.8.1.r1"
