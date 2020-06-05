@@ -258,7 +258,7 @@
   },
   {
     "remote":       "github",
-    "repository":   "sonyxperiadev/SonyOpenTelephony",
+    "repository":   "MarijnS95/SonyOpenTelephony",
     "target_path":  "packages/apps/SonyOpenTelephony",
     "branch":       "master"
   },
