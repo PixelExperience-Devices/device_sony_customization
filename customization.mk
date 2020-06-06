@@ -154,6 +154,7 @@ PRODUCT_PACKAGES += \
     libcne \
     libcneoplookup \
     libcneqmiutils \
+    cnd.rc \
     cnd
 
 # Permissions for Hotword
