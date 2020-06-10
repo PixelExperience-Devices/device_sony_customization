@@ -227,8 +227,5 @@ $(call inherit-product-if-exists, vendor/widevine/widevine.mk)
 # Updatable Apex
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
-# Temporary: Enable QCRILD for all platforms
-TARGET_USE_QCRILD := true
-
 -include $(CUST_PATH)/pe_cust.mk
 -include vendor/aosp/config/common_full_phone.mk
