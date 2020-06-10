@@ -1,4 +1,4 @@
-on late-fs
+on post-fs
     # ims.apk relies on libimscamera_jni and libimsmedia_jni
     mount none /odm/lib64 /system/priv-app/ims/lib/arm64 bind rec
 
