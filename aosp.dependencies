@@ -186,7 +186,7 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/vendor-nxp",
     "target_path":  "vendor/nxp",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
   {
     "remote":       "github",
@@ -205,42 +205,42 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/vendor-sony-oss-cash",
     "target_path":  "vendor/oss/cash",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
 
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/macaddrsetup",
     "target_path":  "vendor/oss/macaddrsetup",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
 
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/QcRilAm",
     "target_path":  "vendor/oss/qcrilam",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
 
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/vendor-sony-oss-simdetect",
     "target_path":  "vendor/oss/simdetect",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
 
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/thermanager",
     "target_path":  "vendor/oss/thermanager",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
 
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/timekeep",
     "target_path":  "vendor/oss/timekeep",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
 
   {
@@ -296,13 +296,13 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/vendor-qcom-opensource-bluetooth",
     "target_path":  "vendor/qcom/opensource/bluetooth",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/vendor-qcom-opensource-gpt-utils",
     "target_path":  "vendor/qcom/opensource/gpt-utils",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
   {
     "remote":       "github",
@@ -331,7 +331,7 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/hardware-qcom-wlan",
     "target_path":  "vendor/qcom/opensource/wlan",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
   {
     "remote":       "github",
