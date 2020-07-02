@@ -186,6 +186,10 @@ PRODUCT_COPY_FILES += \
     $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/ims_permissions.xml \
     $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-ims.xml
 
+# Create folder to bindmount libs for the IMS VideoTelephony
+PRODUCT_COPY_FILES += \
+    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/priv-app/ims/lib/arm64/bind_mount_lib64_here
+
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
