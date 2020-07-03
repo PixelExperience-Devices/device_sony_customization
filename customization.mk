@@ -20,7 +20,7 @@ TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
 
 CUST_PATH := device/sony/customization
 
-DEVICE_PACKAGE_OVERLAYS += $(CUST_PATH)/overlay
+# DEVICE_PACKAGE_OVERLAYS += $(CUST_PATH)/overlay
 
 ifneq ($(filter aosp_f53% aosp_g1109 aosp_g8441, $(TARGET_PRODUCT)),)
 TARGET_SCREEN_HEIGHT := 1280
@@ -127,7 +127,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    CneApp \
+    IWlanService
 endif # !TARGET_USES_ODM_APPS_BINDMOUNT
 
 # Bind-mount odm files into subfolder of /system_ext
@@ -136,57 +138,15 @@ PRODUCT_PACKAGES += \
 
 # Extra apps that are not standard in ODM
 PRODUCT_PACKAGES += \
-    CneApp \
-    IWlanService \
     QtiSystemService
-
-# Extra non-ODM dependencies
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.data.latency@1.0 \
-    com.quicinc.cne.api@1.0 \
-    com.quicinc.cne.api@1.1 \
-    com.quicinc.cne.constants@1.0 \
-    com.quicinc.cne.constants@2.1 \
-    libcne \
-    libcneoplookup \
-    libcneqmiutils \
-    cnd.rc \
-    cnd
 
 # Permissions for Hotword
 PRODUCT_COPY_FILES += \
     $(CUST_PATH)/extras/HotwordEnrollmentXGoogleHEXAGON/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
     $(CUST_PATH)/extras/HotwordEnrollmentOKGoogleHEXAGON/privapp-permissions-OkGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml
 
-# Empty framework jars to bindmount from ODM
-PRODUCT_COPY_FILES += \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qti.dpmframework.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/embmslibrary.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbalibrary.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbamanagerlibrary.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimlpalibrary.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimremoteclientlibrary.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimremoteserverlibrary.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/uimservicelibrary.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.data.factory-V1.0-java.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.data.factory-V2.0-java.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.connection-V1.0-java.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.connection-V1.1-java.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
-
-# Empty permission xmls to bindmount from ODM
-PRODUCT_COPY_FILES += \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/ims_permissions.xml \
-    $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-ims.xml
-
-# Create folder to bindmount libs for the IMS VideoTelephony
+# We are re-signing the IMS app, so we are installing it from the build system:
+# copy emptyfile to ims/lib/arm64 purely to create the folder
 PRODUCT_COPY_FILES += \
     $(CUST_PATH)/ims/emptyfile:$(TARGET_COPY_OUT_PRODUCT)/priv-app/ims/lib/arm64/bind_mount_lib64_here
 
