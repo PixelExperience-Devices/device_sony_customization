@@ -33,7 +33,3 @@ TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_SOURCE := kernel/sony/msm-4.14/kernel
 TARGET_NEEDS_DTBOIMAGE := false
 
-# Temporary: CnE
-DEVICE_MANIFEST_FILE += $(CUST_PATH)/ims/cne/vendor.hw.cneservices.xml
-
-BOARD_VENDOR_SEPOLICY_DIRS += $(CUST_PATH)/ims/cne/sepolicy
