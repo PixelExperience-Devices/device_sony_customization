@@ -32,13 +32,3 @@ cc_prebuilt_library_shared {
         none: true,
     },
 }
-
-cc_prebuilt_library_shared {
-    name: "libdataitems",
-    srcs: ["lib64/libdataitems.so"],
-    vendor: true,
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-}
