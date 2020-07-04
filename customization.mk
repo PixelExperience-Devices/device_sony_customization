@@ -156,6 +156,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.renderer=skiavk
 
+# Recovery UI hack for Ganges video mode panels
+ifneq ($(filter ganges, $(SOMC_PLATFORM)),)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.recovery.ui.blank_unblank_on_init=true
+endif
+
 # Update recovery with the ota for legacy
 ifneq ($(filter loire tone yoshino, $(SOMC_PLATFORM)),)
 PRODUCT_PROPERTY_OVERRIDES += \
