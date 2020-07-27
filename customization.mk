@@ -152,10 +152,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.secure=0 \
     ro.debuggable=1
 
-# Use Vulkan for UI rendering
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.renderer=skiavk
-
 # Recovery UI hack for Ganges video mode panels
 ifneq ($(filter ganges, $(SOMC_PLATFORM)),)
 PRODUCT_PROPERTY_OVERRIDES += \
