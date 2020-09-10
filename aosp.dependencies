@@ -276,7 +276,7 @@
   },
   {
     "remote":       "github",
-    "repository":   "sonyxperiadev/hardware-qcom-media",
+    "repository":   "sonyxperiadev/hardware-qcom-media-sm8150",
     "target_path":  "vendor/qcom/opensource/media/sm8150",
     "branch":     "aosp/LA.UM.8.1.r1"
   },
