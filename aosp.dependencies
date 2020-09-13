@@ -260,7 +260,7 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/SonyOpenTelephony",
     "target_path":  "packages/apps/SonyOpenTelephony",
-    "branch":       "master"
+    "branch":       "q-mr1"
   },
   {
     "remote":       "github",
