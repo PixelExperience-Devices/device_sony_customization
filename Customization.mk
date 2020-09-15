@@ -28,8 +28,12 @@ TARGET_INCREMENTAL_BLOCK_BASED := true
 TARGET_USES_AOSP_SURFACEFLINGER := true
 
 # Kernel inline building
-BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_SOURCE := kernel/sony/msm-4.14/kernel
 TARGET_NEEDS_DTBOIMAGE := false
 
+ifneq ($(filter nile ganges yoshino, $(SOMC_PLATFORM)),)
+BOARD_KERNEL_SEPARATED_DTBO := false
+else
+BOARD_KERNEL_SEPARATED_DTBO := true
+endif
