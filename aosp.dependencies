@@ -190,7 +190,7 @@
   },
   {
     "remote":       "github",
-    "repository":   "NXPNFCProject/NXPNFCC_FW",
+    "repository":   "NXP/nfc-NXPNFCC_FW",
     "target_path":  "vendor/nxp/NXPNFCC_FW",
     "branch":     "master"
   },
