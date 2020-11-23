@@ -16,6 +16,7 @@
 cc_prebuilt_library_shared {
     name: "libsmwrapper",
     srcs: ["lib/libsmwrapper.so"],
+    shared_libs: ["libc++", "libc", "libcutils", "libdl", "liblog", "libm"],
     vendor: true,
     compile_multilib: "32",
     strip: {
