@@ -356,11 +356,5 @@
     "repository":   "afstamming/proprietary_vendor_widevine",
     "target_path":  "vendor/widevine",
     "branch":     "af-lineage-18.0"
-  },
-  {
-    "repository": "packages_apps_PixelLiveWallpaper",
-    "target_path": "packages/apps/PixelLiveWallpaper",
-    "branch": "ten",
-    "remote": "pixel-gitlab"
   }
 ]
