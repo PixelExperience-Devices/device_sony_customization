@@ -184,6 +184,24 @@
   },
   {
     "remote":       "github",
+    "repository":   "sonyxperiadev/device-sony-edo",
+    "target_path":  "device/sony/edo",
+    "branch":     "main"
+  },
+  {
+    "remote":       "github",
+    "repository":   "sonyxperiadev/device-sony-pdx203",
+    "target_path":  "device/sony/pdx203",
+    "branch":     "main"
+  },
+    {
+    "remote":       "github",
+    "repository":   "sonyxperiadev/device-sony-pdx206",
+    "target_path":  "device/sony/pdx206",
+    "branch":     "main"
+  },
+  {
+    "remote":       "github",
     "repository":   "sonyxperiadev/vendor-nxp",
     "target_path":  "vendor/nxp",
     "branch":     "master"
