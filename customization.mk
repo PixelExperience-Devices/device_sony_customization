@@ -182,7 +182,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.voice_on_lte=1
 
-TARGET_USES_AOSP_APNS_CONF := true
+USE_SODP_APNS := false
 
 # Wallpapers
 PRODUCT_PACKAGES += \
