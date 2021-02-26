@@ -26,7 +26,7 @@ USE_DEVICE_SPECIFIC_DATASERVICES := true
 
 # Kernel inline building
 TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_KERNEL_SOURCE := kernel/sony/msm-4.14/kernel
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel
 TARGET_NEEDS_DTBOIMAGE := false
 
 ifneq ($(filter nile ganges yoshino, $(SOMC_PLATFORM)),)
