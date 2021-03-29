@@ -284,7 +284,7 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/hardware-qcom-display",
     "target_path":  "vendor/qcom/opensource/display",
-    "branch":     "aosp/LA.UM.9.12.r1"
+    "branch":     "aosp/LA.UM.8.1.r1"
   },
   {
     "remote":       "github",
@@ -296,6 +296,12 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/hardware-qcom-media-sm8150",
     "target_path":  "vendor/qcom/opensource/media/sm8150",
+    "branch":     "aosp/LA.UM.8.1.r1"
+  },
+  {
+    "remote":       "github",
+    "repository":   "sonyxperiadev/hardware-qcom-media-sm8150",
+    "target_path":  "vendor/qcom/opensource/media/sm8250",
     "branch":     "aosp/LA.UM.9.12.r1"
   },
   {
@@ -355,7 +361,7 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/vendor-qcom-opensource-commonsys-intf-display",
     "target_path":  "vendor/qcom/opensource/display-commonsys-intf",
-    "branch":     "aosp/LA.UM.9.12.r1"
+    "branch":     "aosp/LA.UM.8.1.r1"
   },
   {
     "remote":       "github",
