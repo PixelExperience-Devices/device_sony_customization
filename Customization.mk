@@ -29,6 +29,9 @@ TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel
 TARGET_NEEDS_DTBOIMAGE := false
 
+#Enable enforcing SElinux
+BOARD_USE_ENFORCING_SELINUX := true
+
 ifneq ($(filter nile ganges yoshino, $(SOMC_PLATFORM)),)
 BOARD_KERNEL_SEPARATED_DTBO := false
 else
