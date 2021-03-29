@@ -49,66 +49,6 @@
   },
   {
     "remote":       "github",
-    "repository":   "sonyxperiadev/device-sony-common-headers",
-    "target_path":  "kernel/sony/msm-4.19/common-headers",
-    "branch":     "aosp/LA.UM.9.12.r1"
-  },
-  {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/kernel",
-    "target_path":  "kernel/sony/msm-4.19/kernel",
-    "branch":     "aosp/LA.UM.9.12.r1"
-  },
-  {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/kernel-techpack-audio",
-    "target_path":  "kernel/sony/msm-4.19/kernel/techpack/audio",
-    "branch":     "aosp/LA.UM.9.12.r1"
-  },
-  {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/kernel-techpack-camera",
-    "target_path":  "kernel/sony/msm-4.19/kernel/techpack/camera",
-    "branch":     "aosp/LA.UM.9.12.r1"
-  },
-  {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/kernel-techpack-data-kernel",
-    "target_path":  "kernel/sony/msm-4.19/kernel/techpack/data-kernel",
-    "branch":     "aosp/LA.UM.9.12.r1"
-  },
-  {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/kernel-techpack-display-driver",
-    "target_path":  "kernel/sony/msm-4.19/kernel/techpack/display",
-    "branch":     "aosp/LA.UM.9.12.r1"
-  },
-  {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/kernel-defconfig",
-    "target_path":  "kernel/sony/msm-4.19/kernel/arch/arm64/configs/sony",
-    "branch":     "aosp/LA.UM.9.12.r1"
-  },
-  {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/vendor-qcom-opensource-wlan-fw-api",
-    "target_path":  "kernel/sony/msm-4.19/kernel/drivers/staging/wlan-qc/fw-api",
-    "branch":     "aosp/LA.UM.9.12.r1"
-  },
-  {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/vendor-qcom-opensource-wlan-qca-wifi-host-cmn",
-    "target_path":  "kernel/sony/msm-4.19/kernel/drivers/staging/wlan-qc/qca-wifi-host-cmn",
-    "branch":     "aosp/LA.UM.9.12.r1"
-  },
-  {
-    "remote":       "github",
-    "repository":   "sonyxperiadev/vendor-qcom-opensource-wlan-qcacld-3.0",
-    "target_path":  "kernel/sony/msm-4.19/kernel/drivers/staging/wlan-qc/qcacld-3.0",
-    "branch":     "aosp/LA.UM.9.12.r1"
-  },
-  {
-    "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-sepolicy",
     "target_path":  "device/sony/sepolicy",
     "branch":     "master"
