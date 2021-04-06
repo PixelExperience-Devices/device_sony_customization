@@ -7,6 +7,12 @@
   },
   {
     "remote":       "github",
+    "repository":   "sonyxperiadev/qti-headers",
+    "target_path":  "kernel/sony/qti-headers",
+    "branch":     "master"
+  },
+  {
+    "remote":       "github",
     "repository":   "sonyxperiadev/kernel",
     "target_path":  "kernel/sony/msm-4.14/kernel",
     "branch":     "aosp/LA.UM.7.1.r1"
