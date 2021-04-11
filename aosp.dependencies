@@ -117,7 +117,7 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-sepolicy",
     "target_path":  "device/sony/sepolicy",
-    "branch":     "master"
+    "branch":     "r-mr1"
   },
   {
     "remote":       "github",
