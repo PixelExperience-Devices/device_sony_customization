@@ -152,16 +152,6 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QtiSystemService
-LOCAL_SRC_FILES := ims/QtiSystemService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := bindmountims.rc
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES := ims/bindmountims.rc
