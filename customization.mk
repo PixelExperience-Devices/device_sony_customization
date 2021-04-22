@@ -141,10 +141,6 @@ endif # !TARGET_USES_ODM_APPS_BINDMOUNT
 PRODUCT_PACKAGES += \
     bindmountims.rc
 
-# Extra apps that are not standard in ODM
-PRODUCT_PACKAGES += \
-    QtiSystemService
-
 # Permissions for Hotword
 PRODUCT_COPY_FILES += \
     $(CUST_PATH)/extras/HotwordEnrollmentXGoogleHEXAGON/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
