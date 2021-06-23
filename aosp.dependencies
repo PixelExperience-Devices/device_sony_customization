@@ -117,154 +117,154 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-sepolicy",
     "target_path":  "device/sony/sepolicy",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-common",
     "target_path":  "device/sony/common",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-nile",
     "target_path":  "device/sony/nile",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-voyager",
     "target_path":  "device/sony/voyager",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-discovery",
     "target_path":  "device/sony/discovery",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-pioneer",
     "target_path":  "device/sony/pioneer",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
 
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-ganges",
     "target_path":  "device/sony/ganges",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-kirin",
     "target_path":  "device/sony/kirin",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-mermaid",
     "target_path":  "device/sony/mermaid",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-yoshino",
     "target_path":  "device/sony/yoshino",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-poplar",
     "target_path":  "device/sony/poplar",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-lilac",
     "target_path":  "device/sony/lilac",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-maple",
     "target_path":  "device/sony/maple",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
 
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-tama",
     "target_path":  "device/sony/tama",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-apollo",
     "target_path":  "device/sony/apollo",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-akari",
     "target_path":  "device/sony/akari",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-akatsuki",
     "target_path":  "device/sony/akatsuki",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
 
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-kumano",
     "target_path":  "device/sony/kumano",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-griffin",
     "target_path":  "device/sony/griffin",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-bahamut",
     "target_path":  "device/sony/bahamut",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-seine",
     "target_path":  "device/sony/seine",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-pdx201",
     "target_path":  "device/sony/pdx201",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-edo",
     "target_path":  "device/sony/edo",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-pdx203",
     "target_path":  "device/sony/pdx203",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
     {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-pdx206",
     "target_path":  "device/sony/pdx206",
-    "branch":     "r-mr1"
+    "branch":     "master"
   },
   {
     "remote":       "github",
