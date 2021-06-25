@@ -461,6 +461,12 @@
   },
   {
     "remote":       "github",
+    "repository":   "sonyxperiadev/vendor-qcom-opensource-vibrator",
+    "target_path":  "vendor/qcom/opensource/vibrator-sony",
+    "branch":     "aosp/LA.UM.7.1.r1"
+  },
+  {
+    "remote":       "github",
     "repository":   "afstamming/proprietary_vendor_widevine",
     "target_path":  "vendor/widevine",
     "branch":     "af-lineage-18.0"
