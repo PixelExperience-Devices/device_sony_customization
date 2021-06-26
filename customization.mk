@@ -81,15 +81,6 @@ TARGET_RECOVERY_DEVICE_MODULES := tune2fs strace
 # Google Wifi Hal
 TARGET_INCLUDE_WIFI_EXT := false
 
-# Vibrator
-ifeq ($(TARGET_VIBRATOR_V1_2),true)
-# QTI Haptics Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service \
-    libqtivibratoreffect
-endif
-
-
 # cust packages
 PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
